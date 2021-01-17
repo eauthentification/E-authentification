@@ -1,2 +1,47 @@
 hi bhushan
 hi nilesh here
+
+
+
+
+------Changes Added Here-----
+
+Date: 17/01/2021
+
+
+//In Entity Package
+
+1.	otp Entity added User Entity.
+2.	Changed mobile_No Entity as mobileno.
+3	Check database also because of Entity this database entity also changes
+	so first of all change in application.properties and generate table again
+	
+
+
+
+//In Repository Package
+
+1.	Added MobileOtpRepository
+
+
+//In Service Package
+
+1.	Added Total 3 Changes
+2.	Added extra 3 Classes
+
+
+//In Controller
+
+1.	Added Mobile Otp Controller
+
+
+
+//Facing Some Problems We have need work on it
+
+1.	While Registering new user with already existing username, It's throwing Exception and program
+	gets terminated abruptly..
+	So we have to work on that Exception
+	
+
+
+

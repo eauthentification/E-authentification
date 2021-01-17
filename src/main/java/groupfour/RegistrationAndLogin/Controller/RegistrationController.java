@@ -18,7 +18,7 @@ public class RegistrationController {
 	private RegisterRepository service;
 	
 	@PostMapping("/register")
-	@CrossOrigin(origins="http://localhost:65380")
+	//@CrossOrigin(origins="http://localhost:65380")
 	public User registerUser(@RequestBody User user) throws Exception {
 		String tempUsername = user.getUsername();
 		if(tempUsername != null && !"".equals(tempUsername)){
