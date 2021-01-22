@@ -20,7 +20,7 @@ public class User {
 	private String password;
 	private String first_Name;
 	private String last_Name;
-	private String email_Id;
+	private String emailid;
 	private long mobileno;
 	private String gender;
 	private String otp;
@@ -38,7 +38,7 @@ public class User {
 		this.password = password;
 		this.first_Name = first_Name;
 		this.last_Name = last_Name;
-		this.email_Id = email_Id;
+		this.emailid = email_Id;
 		this.mobileno = mobile_No;
 		this.gender = gender;
 		this.otp = otp;
@@ -90,21 +90,27 @@ public class User {
 		this.last_Name = last_Name;
 	}
 
-	public String getEmail_Id() {
-		return email_Id;
+	
+
+	public String getEmailid() {
+		return emailid;
 	}
 
-	public void setEmail_Id(String email_Id) {
-		this.email_Id = email_Id;
+
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
 	}
 
-	public long getMobile_No() {
+
+	public long getMobileno() {
 		return mobileno;
 	}
 
-	public void setMobile_No(long mobile_No) {
-		this.mobileno = mobile_No;
+
+	public void setMobileno(long mobileno) {
+		this.mobileno = mobileno;
 	}
+
 
 	public String getGender() {
 		return gender;
@@ -114,10 +120,14 @@ public class User {
 		this.gender = gender;
 	}
 
+
 	@Override
 	public String toString() {
 		return "User [username=" + username + ", password=" + password + ", first_Name=" + first_Name + ", last_Name="
-				+ last_Name + ", email_Id=" + email_Id + ", mobile_No=" + mobileno + ", gender=" + gender + "]";
+				+ last_Name + ", emailid=" + emailid + ", mobileno=" + mobileno + ", gender=" + gender + ", otp=" + otp
+				+ "]";
 	}
+
+	
 
 }

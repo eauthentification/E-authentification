@@ -30,7 +30,7 @@ public class LoginController {
 	}
 
 	@PostMapping("/login")
-	@CrossOrigin(origins="http://localhost:65380")
+	@CrossOrigin(origins="http://localhost:4200")
 	public User loginUser(@RequestBody User user) throws Exception{
 		String tempUsername = user.getUsername();
 		String tempPass = user.getPassword();
@@ -38,6 +38,8 @@ public class LoginController {
 		if(tempUsername !=null && tempPass != null) {
 			userObj = service.findByUsernameAndPassword(tempUsername,tempPass);
 		}
+		
+		
 		if(userObj == null) {
 			throw new Exception("Bad credentials");
 		}

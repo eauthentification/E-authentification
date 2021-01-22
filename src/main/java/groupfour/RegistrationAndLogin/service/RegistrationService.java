@@ -12,11 +12,16 @@ public class RegistrationService {
 	@Autowired 
 	private RegisterRepository repo;
 	
-	public User saveUser(User user) {
+	public String saveUser(User user) {
 		
-		return repo.save(user);
+		if(repo.existsById(user.getUsername()))
+		return "failed";
+		 repo.save(user);
+		 return "insert";
 		
 	}
+	
+	
 	public User fetchUserByUsername(String username) {
 		return repo.findByUsername(username);
 	}
